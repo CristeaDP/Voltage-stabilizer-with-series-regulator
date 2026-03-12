@@ -1,0 +1,624 @@
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "temperatura.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/1n4148.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bc807-25.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bc817-25.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bc846b.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bc856b.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c2v7.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v1.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c5v6.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v2.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c6v8.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c8v2.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/bzx84c10.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/irfr120npbf.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/mjd31cg.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/mjd32cg.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj177lt1g.lib" 
+.LIB "c:/users/crist/desktop/lib_modelepspice_anexa_1/lib_modelepspice_anexa_1/modele_a1_lib/mmbfj309lt1g.lib" 
+* From [PSPICE NETLIST] section of C:\Users\crist\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 1u 
+.TEMP 0 27 125
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROIECT-CEF2
+X_Q1         N00240 N00240 N00244 BC856/INF
+X_Q2         N00521 N00240 N00280 BC856/INF
+X_Q3         N00240 N00248 N00529 BC846/INF
+X_Q4         N00521 N04898 N00525 BC846/INF
+X_Q5         VIN N00829 N01290 BC846/INF
+X_Q6         VIN N00521 N00829 BC846/INF
+Q_Q8         N00521 N01227 0 BC817-25 
+Q_Q7         VIN N00248 N02192 BC817-25 
+X_Q9         N00521 N01290 VOUT BC846/INF
+V_V1         VIN 0 12Vdc
+D_D4         0 N00248 BZX84C2V7/PLP 
+R_R1         N00248 VIN  1.8k TC=0,0 
+R_R2         N00244 VIN  100 TC=0,0 
+R_R3         N00280 VIN  100 TC=0,0 
+R_R4         N00920 N00529  100 TC=0,0 
+R_R5         N00920 N00525  100 TC=0,0 
+R_R6         N07289 VIN  1k TC=0,0 
+R_R7         N01270 N01227  330 TC=0,0 
+R_R8         0 N01270  68 TC=0,0 
+R_R9         N01227 N01197  680 TC=0,0 
+R_R10         N01197 N02192  1k TC=0,0 
+R_R11         0 N07222  10k TC=0,0 
+R_R12         0 N04894  5.6k TC=0,0 
+R_R14         N01633 N01641  100 TC=0,0 
+R_R15         N01641 VOUT  1k TC=0,0 
+R_R16         N01694 VOUT  1k TC=0,0 
+R_R18         0 N01720  22 TC=0,0 
+R_R19         N01720 VOUT  220 TC=0,0 
+R_R20         N01290 VOUT  1 TC=0,0 
+X_R21         N01633 N04898 N04894 POT PARAMS: SET=1 VALUE=5k
+D_D5         N01694 0 D1N4148_1 
+D_D6         N07289 0 D1N4148_1 
+X_Q10         N00920 N07289 N07222 BC846/INF
+
+**** RESUMING temperatura.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file 1n4148.ind for library file 1n4148.lib.
+
+INFO(ORPSIM-15422): Making new index file 1n4148.ind for library file 1n4148.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bc807-25.ind for library file bc807-25.lib.
+
+INFO(ORPSIM-15422): Making new index file bc807-25.ind for library file bc807-25.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bc817-25.ind for library file bc817-25.lib.
+
+INFO(ORPSIM-15422): Making new index file bc817-25.ind for library file bc817-25.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bc846b.ind for library file bc846b.lib.
+
+INFO(ORPSIM-15422): Making new index file bc846b.ind for library file bc846b.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bc856b.ind for library file bc856b.lib.
+
+INFO(ORPSIM-15422): Making new index file bc856b.ind for library file bc856b.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c2v7.ind for library file bzx84c2v7.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c2v7.ind for library file bzx84c2v7.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c5v1.ind for library file bzx84c5v1.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c5v1.ind for library file bzx84c5v1.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c5v6.ind for library file bzx84c5v6.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c5v6.ind for library file bzx84c5v6.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c6v2.ind for library file bzx84c6v2.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c6v2.ind for library file bzx84c6v2.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c6v8.ind for library file bzx84c6v8.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c6v8.ind for library file bzx84c6v8.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c8v2.ind for library file bzx84c8v2.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c8v2.ind for library file bzx84c8v2.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file bzx84c10.ind for library file bzx84c10.lib.
+
+INFO(ORPSIM-15422): Making new index file bzx84c10.ind for library file bzx84c10.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file irfr120npbf.ind for library file irfr120npbf.lib.
+
+INFO(ORPSIM-15422): Making new index file irfr120npbf.ind for library file irfr120npbf.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file mjd31cg.ind for library file mjd31cg.lib.
+
+INFO(ORPSIM-15422): Making new index file mjd31cg.ind for library file mjd31cg.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file mjd32cg.ind for library file mjd32cg.lib.
+
+INFO(ORPSIM-15422): Making new index file mjd32cg.ind for library file mjd32cg.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file mmbfj177lt1g.ind for library file mmbfj177lt1g.lib.
+
+INFO(ORPSIM-15422): Making new index file mmbfj177lt1g.ind for library file mmbfj177lt1g.lib.
+
+Index has 1 entries from 1 file(s).
+
+INFO(ORPSIM-15423): Unable to find index file mmbfj309lt1g.ind for library file mmbfj309lt1g.lib.
+
+INFO(ORPSIM-15422): Making new index file mmbfj309lt1g.ind for library file mmbfj309lt1g.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BZX84C2V7/PLP   D1N4148_1       
+          IS  110.880000E-18    2.682000E-09 
+           N     .92657         1.836        
+         ISR    1.515900E-06    1.565000E-09 
+         IKF  147.68             .04417      
+          BV    2.7639        100            
+         IBV     .06977       100.000000E-06 
+          RS     .85899          .5664       
+          TT   17.889000E-09   11.540000E-09 
+         CJO  344.690000E-12    4.000000E-12 
+          VJ     .72935          .5          
+           M     .31964          .3333       
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC817-25        BC856           BC846           
+               NPN             PNP             NPN             
+       LEVEL    1               1               1            
+          IS   32.530000E-15   28.000000E-15   45.000000E-15 
+          BF  294.4           284.436         516.544        
+          NF    1               1               1.01         
+         VAF  100              43              74            
+         IKF     .8311           .38             .708        
+         ISE  318.500000E-15   24.903000E-15   55.668000E-15 
+          NE    1.642           2.234           2.567        
+          BR    5.855           4.8             7.745        
+          NR    1               1.005           1.015        
+         VAR                    6.96           14            
+         IKR     .1075           .932           1            
+         ISC  199.700000E-15  125.000000E-15    1.084000E-12 
+          NC    2.09            2.074           4.063        
+          NK     .5663                                       
+         ISS    0               0               0            
+          RB                    2.2             9            
+         RBM                    1.5             4.5          
+         IRB                  100.000000E-06  100.000000E-06 
+          RE    0                .3              .35         
+          RC     .4196          2.251           1.445        
+         CJE   71.140000E-12   11.800000E-12   13.050000E-12 
+         VJE     .5             1                .69         
+         MJE     .3333           .435            .375        
+         CJC   24.290000E-12    8.700000E-12    4.100000E-12 
+         VJC     .5              .9              .75         
+         MJC     .3333           .6              .42         
+        XCJC    1                .65             .65         
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          FC                     .75             .75         
+          TF  660.800000E-12  600.000000E-12  620.000000E-12 
+         XTF   88.29            6.5            68            
+         VTF   10               2               1            
+         ITF    2.569            .314            .72         
+         PTF                    1               1            
+          TR   10.000000E-09    2.604000E-09    2.500000E-09 
+         XTB    1.5             1.6             1.4          
+         XTI                    3.3             3.2          
+          KF    0               5.000000E-15   10.000000E-15 
+          AF    1               1               1            
+          CN    2.42            2.2             2.42         
+           D     .87             .52             .87         
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                BZX84C2V7/PLP    D1N4148_1                  
+
+         IS        8.394E-19      2.281E-10  
+         VJ        7.777E-01      5.690E-01  
+        CJO        3.362E-10      3.802E-12  
+         RS        8.590E-01      5.664E-01  
+        IKF        1.477E+02      4.417E-02  
+         BV        2.764E+00      1.000E+02  
+
+
+ **** BJT MODEL PARAMETERS
+
+                  BC817-25         BC856          BC846     
+
+         BF        2.556E+02      2.446E+02      4.527E+02  
+        ISE        2.332E-14      3.772E-15      1.082E-14  
+        VJE        5.690E-01      1.024E+00      7.419E-01  
+        CJE        6.761E-11      1.162E-11      1.263E-11  
+         RE        0.000E+00      3.000E-01      3.500E-01  
+         RB        0.000E+00      2.200E+00      9.000E+00  
+         BR        5.083E+00      4.128E+00      6.787E+00  
+        ISC        2.639E-14      1.618E-14      4.043E-13  
+        VJC        5.690E-01      9.330E-01      7.965E-01  
+        CJC        2.309E-11      8.452E-12      3.975E-12  
+         RC        4.196E-01      2.251E+00      1.445E+00  
+        RBM        0.000E+00      1.500E+00      4.500E+00  
+         IS        3.525E-16      2.949E-16      4.785E-16  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        7.965E-01      7.965E-01      7.965E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =    0.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)   12.0000  ( VOUT)    2.9943  (N00240)   11.4300 (N00244)   11.9990     
+
+(N00248)    2.7070 (N00280)   11.9990 (N00521)    4.3433 (N00525)    2.1470     
+
+(N00529)    2.1469 (N00829)    3.7524 (N00920)    2.1460 (N01197)    1.0556     
+
+(N01227)     .3897 (N01270)     .0666 (N01290)    3.0092 (N01633)    2.7128     
+
+(N01641)    2.7384 (N01694)     .6943 (N01720)     .2722 (N02192)    2.0348     
+
+(N04894)    1.4332 (N04898)    2.7128 (N07222)     .1905 (N07289)     .7713     
+
+(X_Q1.4)   11.4300 (X_Q1.5)   11.4300 (X_Q1.6)   11.4300 (X_Q1.7)   11.9990     
+
+(X_Q1.8)   11.9990 (X_Q2.4)   11.4300 (X_Q2.5)   11.4300 (X_Q2.6)    4.3433     
+
+(X_Q2.7)   11.9990 (X_Q2.8)   11.9990 (X_Q3.4)    2.7070 (X_Q3.5)    2.7070     
+
+(X_Q3.6)   11.4300 (X_Q3.7)    2.1469 (X_Q3.8)    2.1469 (X_Q4.4)    2.7128     
+
+(X_Q4.5)    2.7128 (X_Q4.6)    4.3433 (X_Q4.7)    2.1470 (X_Q4.8)    2.1470     
+
+(X_Q5.4)    3.7524 (X_Q5.5)    3.7524 (X_Q5.6)   12.0000 (X_Q5.7)    3.0092     
+
+(X_Q5.8)    3.0092 (X_Q6.4)    4.3433 (X_Q6.5)    4.3433 (X_Q6.6)   12.0000     
+
+(X_Q6.7)    3.7524 (X_Q6.8)    3.7524 (X_Q9.4)    3.0092 (X_Q9.5)    3.0092     
+
+(X_Q9.6)    4.3433 (X_Q9.7)    2.9943 (X_Q9.8)    2.9943 (X_Q10.4)     .7713    
+
+(X_Q10.5)     .7713                   (X_Q10.6)    2.1460                       
+
+(X_Q10.7)     .1905                   (X_Q10.8)     .1905                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.231E-02
+
+    TOTAL POWER DISSIPATION   3.88E-01  WATTS
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                BZX84C2V7/PLP    D1N4148_1                  
+
+         IS        1.109E-16      2.682E-09  
+         VJ        7.294E-01      5.000E-01  
+        CJO        3.447E-10      4.000E-12  
+         RS        8.590E-01      5.664E-01  
+        IKF        1.477E+02      4.417E-02  
+         BV        2.764E+00      1.000E+02  
+
+
+ **** BJT MODEL PARAMETERS
+
+                  BC817-25         BC856          BC846     
+
+         BF        2.944E+02      2.844E+02      5.165E+02  
+        ISE        3.185E-13      2.490E-14      5.567E-14  
+        VJE        5.000E-01      1.000E+00      6.900E-01  
+        CJE        7.114E-11      1.180E-11      1.305E-11  
+         RE        0.000E+00      3.000E-01      3.500E-01  
+         RB        0.000E+00      2.200E+00      9.000E+00  
+         BR        5.855E+00      4.800E+00      7.745E+00  
+        ISC        1.997E-13      1.250E-13      1.084E-12  
+        VJC        5.000E-01      9.000E-01      7.500E-01  
+        CJC        2.429E-11      8.700E-12      4.100E-12  
+         RC        4.196E-01      2.251E+00      1.445E+00  
+        RBM        0.000E+00      1.500E+00      4.500E+00  
+         IS        3.253E-14      2.800E-14      4.500E-14  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        7.500E-01      7.500E-01      7.500E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)   12.0000  ( VOUT)    2.9881  (N00240)   11.4890 (N00244)   11.9990     
+
+(N00248)    2.7010 (N00280)   11.9990 (N00521)    4.2273 (N00525)    2.2020     
+
+(N00529)    2.2019 (N00829)    3.7003 (N00920)    2.2009 (N01197)    1.0784     
+
+(N01227)     .3981 (N01270)     .0680 (N01290)    3.0030 (N01633)    2.7071     
+
+(N01641)    2.7327 (N01694)     .6462 (N01720)     .2716 (N02192)    2.0787     
+
+(N04894)    1.4302 (N04898)    2.7071 (N07222)     .2079 (N07289)     .7295     
+
+(X_Q1.4)   11.4890 (X_Q1.5)   11.4890 (X_Q1.6)   11.4890 (X_Q1.7)   11.9990     
+
+(X_Q1.8)   11.9990 (X_Q2.4)   11.4890 (X_Q2.5)   11.4890 (X_Q2.6)    4.2273     
+
+(X_Q2.7)   11.9990 (X_Q2.8)   11.9990 (X_Q3.4)    2.7010 (X_Q3.5)    2.7010     
+
+(X_Q3.6)   11.4890 (X_Q3.7)    2.2019 (X_Q3.8)    2.2019 (X_Q4.4)    2.7071     
+
+(X_Q4.5)    2.7071 (X_Q4.6)    4.2273 (X_Q4.7)    2.2020 (X_Q4.8)    2.2020     
+
+(X_Q5.4)    3.7003 (X_Q5.5)    3.7003 (X_Q5.6)   12.0000 (X_Q5.7)    3.0030     
+
+(X_Q5.8)    3.0030 (X_Q6.4)    4.2273 (X_Q6.5)    4.2273 (X_Q6.6)   12.0000     
+
+(X_Q6.7)    3.7003 (X_Q6.8)    3.7003 (X_Q9.4)    3.0030 (X_Q9.5)    3.0030     
+
+(X_Q9.6)    4.2273 (X_Q9.7)    2.9881 (X_Q9.8)    2.9881 (X_Q10.4)     .7295    
+
+(X_Q10.5)     .7295                   (X_Q10.6)    2.2009                       
+
+(X_Q10.7)     .2079                   (X_Q10.8)     .2079                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -3.240E-02
+
+    TOTAL POWER DISSIPATION   3.89E-01  WATTS
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     TEMPERATURE-ADJUSTED VALUES      TEMPERATURE =  125.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+ **** DIODE MODEL PARAMETERS
+
+                BZX84C2V7/PLP    D1N4148_1                  
+
+         IS        2.474E-11      1.342E-06  
+         VJ        5.454E-01      2.411E-01  
+        CJO        3.768E-10      4.743E-12  
+         RS        8.590E-01      5.664E-01  
+        IKF        1.477E+02      4.417E-02  
+         BV        2.764E+00      1.000E+02  
+
+
+ **** BJT MODEL PARAMETERS
+
+                  BC817-25         BC856          BC846     
+
+         BF        4.498E+02      4.470E+02      7.672E+02  
+        ISE        2.174E-10      2.721E-12      3.265E-12  
+        VJE        2.411E-01      9.044E-01      4.932E-01  
+        CJE        8.435E-11      1.249E-11      1.464E-11  
+         RE        0.000E+00      3.000E-01      3.500E-01  
+         RB        0.000E+00      2.200E+00      9.000E+00  
+         BR        8.945E+00      7.544E+00      1.150E+01  
+        ISC        3.072E-11      2.031E-11      1.227E-11  
+        VJC        2.411E-01      7.717E-01      5.727E-01  
+        CJC        2.880E-11      9.649E-12      4.574E-12  
+         RC        4.196E-01      2.251E+00      1.445E+00  
+        RBM        0.000E+00      1.500E+00      4.500E+00  
+         IS        2.938E-09      2.752E-09      4.300E-09  
+        ISS        0.000E+00      0.000E+00      0.000E+00  
+        VJS        5.727E-01      5.727E-01      5.727E-01  
+        CJS        0.000E+00      0.000E+00      0.000E+00  
+      GAMMA        1.000E-11      1.000E-11      1.000E-11  
+        RCO        0.000E+00      0.000E+00      0.000E+00  
+         VO        1.000E+01      1.000E+01      1.000E+01  
+
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =  125.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)   12.0000  ( VOUT) 95.19E-06  (N00240)   11.6810 (N00244)   11.9970     
+
+(N00248)    2.6733 (N00280)   11.9970 (N00521)     .0061 (N00525)    2.3712     
+
+(N00529)    2.3739 (N00829)     .1526 (N00920)    2.3712 (N01197)    1.1511     
+
+(N01227)     .4130 (N01270)     .0706 (N01290) 95.59E-06 (N01633) 86.31E-06     
+
+(N01641) 87.12E-06 (N01694) 92.58E-06 (N01720) 8.654E-06 (N02192)    2.2366     
+
+(N04894) 45.60E-06 (N04898) 86.31E-06 (N07222)     .2687 (N07289)     .5715     
+
+(X_Q1.4)   11.6810 (X_Q1.5)   11.6810 (X_Q1.6)   11.6810 (X_Q1.7)   11.9970     
+
+(X_Q1.8)   11.9970 (X_Q2.4)   11.6810 (X_Q2.5)   11.6810 (X_Q2.6)     .0061     
+
+(X_Q2.7)   11.9970 (X_Q2.8)   11.9970 (X_Q3.4)    2.6733 (X_Q3.5)    2.6733     
+
+(X_Q3.6)   11.6810 (X_Q3.7)    2.3739 (X_Q3.8)    2.3739 (X_Q4.4) 86.31E-06     
+
+(X_Q4.5) 86.31E-06 (X_Q4.6)     .0061 (X_Q4.7)    2.3712 (X_Q4.8)    2.3712     
+
+(X_Q5.4)     .1526 (X_Q5.5)     .1526 (X_Q5.6)   12.0000 (X_Q5.7) 95.59E-06     
+
+(X_Q5.8) 95.59E-06 (X_Q6.4)     .0061 (X_Q6.5)     .0061 (X_Q6.6)   12.0000     
+
+(X_Q6.7)     .1526 (X_Q6.8)     .1526 (X_Q9.4) 95.59E-06 (X_Q9.5) 95.59E-06     
+
+(X_Q9.6)     .0061 (X_Q9.7) 95.19E-06 (X_Q9.8) 95.19E-06 (X_Q10.4)     .5715    
+
+(X_Q10.5)     .5715                   (X_Q10.6)    2.3712                       
+
+(X_Q10.7)     .2687                   (X_Q10.8)     .2687                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.775E-02
+
+    TOTAL POWER DISSIPATION   2.13E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/05/25 00:30:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-temperatura"  [ c:\users\crist\desktop\test\proiect-cef2-PSpiceFiles\SCHEMATIC1\temperatura.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.99
+
