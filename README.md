@@ -1,53 +1,90 @@
-Stabilizator de tensiune cu element de reglaj serie (3–6 V)
+```
+STABILIZATOR DE TENSIUNE CU ELEMENT DE REGLAJ SERIE (3–6 V)
 
-Acest proiect prezintă proiectarea, simularea și documentarea unui stabilizator de tensiune liniar cu element de reglaj serie (ERS). Circuitul are rolul de a stabiliza o tensiune continuă de intrare și de a furniza la ieșire o tensiune stabilizată reglabilă în intervalul 3 V – 6 V.
+DESCRIERE
+Acest proiect prezintă proiectarea și analiza unui stabilizator de tensiune
+liniar cu element de reglaj serie (ERS), capabil să furnizeze o tensiune
+stabilizată reglabilă în intervalul 3 V – 6 V.
 
-Stabilizarea tensiunii se realizează prin intermediul unui element de reglaj serie (de tip tranzistor) care controlează căderea de tensiune dintre intrare și ieșire, menținând astfel tensiunea de ieșire constantă chiar și în condițiile variației tensiunii de alimentare sau ale sarcinii.
+Scopul stabilizatorului este de a menține o tensiune de ieșire constantă
+chiar și atunci când:
+- tensiunea de intrare variază
+- sarcina conectată la ieșire se modifică
 
-Obiectivele proiectului
+Reglarea tensiunii se realizează prin intermediul unui tranzistor utilizat
+ca element de reglaj serie, care controlează căderea de tensiune dintre
+intrare și ieșire.
 
-Proiectarea unui stabilizator de tensiune liniar
+PRINCIPIUL DE FUNCȚIONARE
+Stabilizatorul funcționează pe baza controlului curentului care trece
+de la sursa de alimentare către sarcină.
 
-Obținerea unei tensiuni de ieșire stabile între 3 V și 6 V
+Blocurile principale ale circuitului sunt:
 
-Analiza funcționării circuitului prin simulări
+1. Sursa de tensiune de intrare
+   Furnizează tensiunea brută ce trebuie stabilizată.
 
-Realizarea schemei electrice și a layout-ului PCB
+2. Referința de tensiune
+   Generează o tensiune stabilă utilizată pentru reglaj.
 
-Documentarea componentelor și pregătirea datelor pentru fabricarea plăcii PCB
+3. Amplificatorul de eroare
+   Compară tensiunea de ieșire cu tensiunea de referință.
 
-Structura proiectului
+4. Elementul de reglaj serie (tranzistor)
+   Controlează căderea de tensiune pentru menținerea
+   unei tensiuni constante la ieșire.
 
-Bill_of_Materials – lista componentelor utilizate în circuit
+5. Sarcina
+   Circuitul alimentat de stabilizator.
 
-Data_Sheets – fișe tehnice ale componentelor electronice
+CARACTERISTICI PRINCIPALE
+- Tip stabilizator: liniar cu element de reglaj serie
+- Tensiune de ieșire reglabilă: 3 V – 6 V
+- Stabilizare la variații ale tensiunii de intrare
+- Stabilizare la variații ale sarcinii
+- Proiect verificat prin simulări
 
-Layout – fișierele pentru layout-ul plăcii PCB
+STRUCTURA PROIECTULUI
 
-Project docs – documentația proiectului
+Bill_of_Materials
+Lista componentelor utilizate în circuit
 
-Schematics / FAZA_1 – schema electrică a stabilizatorului
+Data_Sheets
+Fișele tehnice ale componentelor electronice
 
-Simulations – simulări și rezultate ale analizei circuitului
+Layout
+Fișierele pentru layout-ul plăcii PCB
 
-Fișiere suplimentare
+Project docs
+Documentația proiectului
 
-Schema_bloc.jpg – diagrama bloc a sistemului
+Schematics / FAZA_1
+Schema electrică a stabilizatorului
 
-PCB_Manufacturing_Table.docx – tabel cu parametrii pentru fabricarea PCB-ului
+Simulations
+Fișierele și rezultatele simulărilor circuitului
 
-Tema 3 - Stabilizator de tensiune cu ERS.pdf – enunțul temei proiectului
+FIȘIERE SUPLIMENTARE
+Schema_bloc.jpg
+Diagrama bloc a sistemului
 
-Prezentarea_Cristea_Denis_434E.pptx – prezentarea proiectului
+PCB_Manufacturing_Table.docx
+Parametrii necesari pentru fabricarea PCB-ului
 
-Domenii de utilizare
+Prezentarea_Cristea_Denis_434E.pptx
+Prezentarea proiectului
 
-Stabilizatoarele de tensiune de acest tip sunt utilizate frecvent în:
+Tema 3 - Stabilizator de tensiune cu ERS.pdf
+Cerințele și descrierea temei
 
-alimentarea circuitelor electronice de mică putere
+APLICAȚII
+Stabilizatoarele de tensiune de acest tip sunt utilizate în:
+- alimentarea circuitelor electronice de mică putere
+- sisteme embedded
+- circuite analogice sensibile la variații de tensiune
+- aplicații educaționale în electronică
 
-sisteme embedded și microcontrolere
-
-circuite analogice sensibile la variații de tensiune
-
-proiecte educaționale de electronică
+AUTOR
+Denis Cristea
+Proiect realizat în cadrul laboratorului de Electronică.
+```
